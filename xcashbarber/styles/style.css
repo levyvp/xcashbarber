@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+}
+
+/* Barra de Navegação */
+.navbar {
+    width: 100%;
+    background-color: #272727;
+    height: 90px;
+    padding: 0px 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 70px;
+    margin-top: 10px;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.navbar-items a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #ccc;
+}
+
+.default-btn {
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover {
+    background-color: #22bb5f;
+    color: #fff;
+}
+
+/* Banner */
+.banner {
+    background-image: url(../img/pngtree-checkered-flooring-in-a-barber-shop-picture-image_2651920.jpg);
+    padding: 12rem 0;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+.banner h1, 
+.banner p {  
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+.banner h1 {
+    font-size: 85px;
+}
+
+.banner p {
+    font-size: 42px;
+}
+
+/* Serviços */
+.services {
+    padding: 5rem 0;
+}
+
+.services ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.services i {
+    font-size: 55px;
+    margin-bottom: 17px;
+}
+
+.fa-crown {
+    color: #D4AF37;
+}
+
+.services h3 {
+    margin-bottom: 25px;
+}
+
+.services p {
+    line-height: 20px;
+}
+
+/* Preços */
+.prices h2 {
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.prices p {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Planos */
+.planos-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 85%;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+
+.planos-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.planos-container h3 {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif; /* Exemplo de fonte do Google Fonts */
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Deixa todas as letras maiúsculas */
+    letter-spacing: 1.5px; /* Adiciona espaçamento entre as letras */
+    font-weight: bold;
+}
+
+
+.planos-container li:not([class]) {
+    list-style: none;
+    height: auto;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra suave nas letras */
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid #000; /* Linha abaixo das palavras */
+}
+
+
+.planos-container div {
+    flex: 1 1 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombras mais suaves */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+    font-family: 'Poppins', sans-serif;
+}
+
+.planos-container div:hover {
+    transform: translateY(-12px); /* Eleva a caixa ao passar o mouse */
+    box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.7); /* Sombra maior ao hover */
+}
+
+.planos-bronze {
+    background: linear-gradient(135deg, #cd7f32, #b87333); /* Adicionando gradiente */
+}
+
+.planos-prata {
+    background: linear-gradient(135deg, #c0c0c0, #a9a9a9);
+}
+
+.planos-ouro {
+    background: linear-gradient(135deg, #ffd700, #f4c430);
+}
+
+.planos-diamante {
+    background: linear-gradient(135deg, #b9f2ff, #87ceeb);
+}
+
+
+.plano-btn {
+    list-style: none;
+    background-color: #fff;
+    color: #222;
+    padding: 15px 2px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.plano-btn:hover {
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+}
+
+.planos-container p {
+    font-weight: bold;
+    color: #444;
+    padding-bottom: 20px;
+}
+
+ /* parte de suporte */
+.contato h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.contato {
+    padding: 5rem 0 2rem 0;
+    text-align: center;
+}
+
+.contato input, textarea {
+    text-align: center;
+    width: 200px;
+    padding: 17px 37px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0px 10px 20px;
+}
+
+.contato textarea{
+    display: block;
+    margin: 0 auto 25px;
+    width: 700px;
+    height: 200px;
+    max-width: 75%; /* Limita a largura ao tamanho do contêiner */
+    max-height: 450px; /* Limita a altura ao tamanho do contêiner */
+}
+
+.contato input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: #22bb5f;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contato input[type="submit"]:hover{
+    background-color: #18af54;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra maior ao hover */
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0px 150px;
+}
+
+ /* responsividade */
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 570px) {
+
+    /* Evitar rolagem horizontal */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Ajustes na Barra de Navegação */
+    .navbar {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .navbar-items {
+        position: relative;
+        height: auto;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .navbar-items li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Ajustes no Banner */
+    .banner {
+        padding: 5rem 0;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+    }
+
+    .banner p {
+        font-size: 22px;
+    }
+
+    /* Ajustes na seção de Serviços */
+    .services ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services li {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .services i {
+        font-size: 40px;
+    }
+
+    .services h3 {
+        font-size: 22px;
+    }
+
+    .services p {
+        font-size: 16px;
+    }
+
+    @media (max-width: 570px) {
+
+    /* Evitar rolagem horizontal */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /* Ajustes na seção de Planos */
+    .planos-container {
+        display: flex;
+        flex-direction: column; /* Ajuste para empilhar os planos */
+        width: 100%; /* Para garantir que ocupem toda a largura */
+        gap: 20px; /* Espaçamento entre os planos */
+    }
+
+    .planos-container div {
+        width: 100%; /* Cada plano vai ocupar 100% da largura */
+        margin-bottom: 20px;
+    }
+
+    .planos-bronze, .planos-prata, .planos-ouro, .planos-diamante {
+        flex-direction: column; /* Caso não esteja definindo corretamente o layout em coluna */
+    }
+
+    /* Ajustes gerais de fontes e espaçamento */
+    .planos-container h3 {
+        font-size: 22px;
+    }
+
+    .planos-container p {
+        font-size: 16px;
+    }
+
+    .plano-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}   
+    /* Ajustes na seção de Contato */
+    .contato input, .contato textarea {
+        width: 100%;
+        max-width: 100%; /* Permite que os campos ocupem toda a largura */
+    }
+
+    .contato textarea {
+        height: 150px;
+    }
+
+    /* Footer */
+    footer {
+        margin-bottom: 50px;
+    }
+}
